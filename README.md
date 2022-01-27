@@ -1,6 +1,6 @@
-# Animal Shelter Rails API
+# Timothee Chalamet API
 
-#### _Rails API independent project_
+#### _Rails API for Timothee Chalamet_
 
 #### Created By: Morgan Waites
 
