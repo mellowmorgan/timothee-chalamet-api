@@ -5,7 +5,7 @@ class QuotesController < ApplicationController
   end
   
   def index
-    @quotes = Quote.all
+    @quotes = Quote.all.order(created_at: :desc)
     json_response(@quotes)
   end
 

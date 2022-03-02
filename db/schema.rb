@@ -10,17 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_21_032813) do
+ActiveRecord::Schema.define(version: 2022_03_02_200133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "photos", force: :cascade do |t|
     t.string "file_path"
+    t.datetime "created_at"
   end
 
   create_table "quotes", force: :cascade do |t|
     t.string "content"
+    t.datetime "created_at"
   end
 
 end
