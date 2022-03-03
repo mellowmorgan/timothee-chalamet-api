@@ -156,7 +156,7 @@ GEM
 
 PLATFORMS
   -darwin-20
-
+x86_64-darwin-20
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
