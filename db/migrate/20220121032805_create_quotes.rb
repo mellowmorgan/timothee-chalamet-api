@@ -1,8 +1,7 @@
 class CreateQuotes < ActiveRecord::Migration[5.2]
   def change
-    create_table :cats do |t|
-      t.name
-      t.string :breed
+    create_table :quotes do |t|
+      t.string :content
     end
   end
 end
