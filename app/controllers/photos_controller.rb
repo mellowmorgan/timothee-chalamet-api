@@ -8,7 +8,7 @@ class PhotosController < ApplicationController
     @photos = Photo.all.order(created_at: :desc)
     json_response(@photos)
   end
-
+  
   def show
     @photo = Photo.find(params[:id])
     json_response(@photo)
