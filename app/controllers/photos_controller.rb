@@ -5,7 +5,7 @@ class PhotosController < ApplicationController
   end
   
   def index
-    @photos = Photo.order(created_at: :desc)
+    @photos = Photo.all.order(created_at: :desc)
     json_response(@photos)
   end
 
