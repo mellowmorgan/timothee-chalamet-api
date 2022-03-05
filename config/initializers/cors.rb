@@ -16,4 +16,4 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
   
 
-# Rails.application.config.hosts << "timothee-chalamet-api.herokuapp.com", https://mellowmorgan.github.io/react-chalamet-frontend/
+Rails.application.config.hosts << "timothee-chalamet-api.herokuapp.com", "https://mellowmorgan.github.io/react-chalamet-frontend/"
