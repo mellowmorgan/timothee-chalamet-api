@@ -6,14 +6,14 @@
 # Read more: https://github.com/cyu/rack-cors
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
-  allow do
-    origins 'mellowmorgan.github.io/react-chalamet-frontend','timothee-chalamet-api.herokuapp.com'
-
-    resource '*',
-      headers: :any,
-      # methods: [:get, :post, :put, :patch, :delete, :options, :head]
-      methods: [:get, :post]
+    allow do
+      origins 'example.com'
+  
+      resource '*',
+        headers: :any,
+        methods: [:get, :post, :put, :patch, :delete, :options, :head]
+    end
   end
-end
+  
 
-Rails.application.config.hosts << "timothee-chalamet-api.herokuapp.com"
+# Rails.application.config.hosts << "timothee-chalamet-api.herokuapp.com", https://mellowmorgan.github.io/react-chalamet-frontend/
