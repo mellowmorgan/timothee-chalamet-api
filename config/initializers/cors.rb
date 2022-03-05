@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://mellowmorgan.github.io/react-chalamet-frontend/'
+    origins 'mellowmorgan.github.io/react-chalamet-frontend'
 
     resource '*',
       headers: :any,
@@ -15,3 +15,5 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       methods: [:get, :post]
   end
 end
+
+Rails.application.config.hosts << "mellowmorgan.github.io/react-chalamet-frontend"
