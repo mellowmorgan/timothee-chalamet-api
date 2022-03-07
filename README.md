@@ -14,10 +14,13 @@
 * _Rails_
 * _ActiveRecord_
 * _Postman_
+* _Heroku_
 
 ## Description
 
 This API uses a database with tables for quotes and pictures of famous beautiful actor Timothee Chalamet It has full CRUD functionality. All users can post, update, delete, and retrieve the endpoints of the API.
+
+Hosted on Heroku at https://timothee-chalamet-api.herokuapp.com/. The front end to this app is built with React, the repo can be found [here](https://github.com/mellowmorgan/react-chalamet-frontend). And hosted [here](https://chalamet-api.netlify.app/) with Netlify.
 
 ## System Requirements
 
@@ -32,8 +35,8 @@ _(Note: Ruby gem dependencies will be installed automatically by Bundler.)_
 * From the main project directory, enter `bundle install` in the terminal to populate gems.
 * To create a database, type in your terminal: 
       `rake db:setup`
-* Run `rails s -p 3001` to start the Rails server. 
-* In Postman (for full CRUD use) or internet browser (for viewing), enter localhost:3001, or go clone the frontend to this api to see it in action at https://github.com/mellowmorgan/chalamet-frontend.git and follow instructions, run that one on port 3000.
+* Run `rails s -p 3001` to start server.
+* Can use Postman to access endpoints, outlined below.
 
 ## Endpoints Quotes
 
